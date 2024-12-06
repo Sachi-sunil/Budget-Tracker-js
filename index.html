@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Budget Tracker</title>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Budget App</h2>
+    <div class="error_message">
+      <p>Please Enter Budget Amount More than 0</p>
+    </div>
+    <div class="budget_content">
+      <div class="ur_budget">
+        <form>
+          <label for="budget">Your Budget :</label>
+          <input type="number" placeholder="Enter your budget" class="budget_input">
+          <button class="btn" id="btn_budget">Calculate</button>
+        </form>
+      </div>
+      <div class="ur_expenses">
+        <form>
+          <label for="expenses">Expenses Details :</label>
+          <input type="text" placeholder="Enter your expenses Desc!" class="expenses_input">
+          <input type="number" placeholder="Enter your expenses Amount!" class="expenses_amount">
+
+          <button class="btn" id="btn_expenses">Add Expenses</button>
+        </form>
+      </div>
+    </div>
+
+    <!----------------- Cards Start --------------------------->
+    <ul class="cards">
+      <li>
+        <i class="bx bx-money"></i>
+        <span class="info">
+          <h3><span>$</span><span class="budget_card">0</span></h3>
+          <p>Budget</p>
+        </span>
+      </li>
+      <li>
+        <i class="bx bx-credit-card"></i>
+        <span class="info">
+          <h3><span>$</span><span class="expenses_card">0</span></h3>
+          <p>Expenses</p>
+        </span>
+      </li>
+      <li>
+        <i class="bx bx-dollar"></i>
+        <span class="info">
+          <h3><span>$</span><span class="balance_card">0</span></h3>
+          <p>Balance</p>
+        </span>
+      </li>
+    </ul>
+
+    <!------------------- Cards Close -------------------------->
+
+    <!-- ------------------------- Table content start-------- -->
+     <div class="tbl_content">
+      <h3>Budget Details</h3>
+      <div class="tbl_data">
+  
+      </div>
+     </div>
+
+
+    <!-- ------------------------- Table content start-------- -->
+
+
+  </div>
+</body>
+  <script src="script.js"></script>
+</html>
